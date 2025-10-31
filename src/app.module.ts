@@ -4,6 +4,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { PlansModule } from './plans/plans.module';
 import { SubscriptionsModule } from './subscriptions/subscriptions.module';
 import { PaymentsModule } from './payments/payments.module';
+import { DevicesModule } from './devices/devices.module';
+import { ProfilesModule } from './profiles/profiles.module';
+import { ContentsModule } from './contents/contents.module';
 @Module({
   imports: [
     ConfigModule.forRoot({ envFilePath: '.env', isGlobal: true }),
@@ -26,6 +29,9 @@ import { PaymentsModule } from './payments/payments.module';
     PlansModule,
     SubscriptionsModule,
     PaymentsModule,
+    DevicesModule,
+    ProfilesModule,
+    ContentsModule,
   ],
   controllers: [],
   providers: [],
